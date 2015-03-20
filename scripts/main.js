@@ -1,0 +1,1 @@
+function log(a){var b=new Date,c=$("<tr><td>"+b.toTimeString()+"</td><td>"+a+"</td></tr>");$("#logTarget").append(c)}function clear(){$("#logTarget").empty()}$(function(){$(".js-clear").on("click",function(a){a.preventDefault(),clear()})});
