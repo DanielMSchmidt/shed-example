@@ -342,6 +342,18 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/shed/shed.js',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: './app/scripts',
+          src: 'serviceWorker.js',
+          dest: '<%= config.dist %>/scripts'
         }]
       },
       styles: {
@@ -420,7 +432,6 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'rev',
     'usemin',
     'htmlmin'
   ]);

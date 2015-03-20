@@ -2,6 +2,7 @@
   "name": "shed-example",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0"
+    "bootstrap-sass-official": "~3.2.0",
+    "shed": "~1.0.0"
   }
 }
