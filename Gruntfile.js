@@ -346,7 +346,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: '.',
-          src: 'bower_components/shed/shed.js',
+          src: 'bower_components/shed/*.js',
           dest: '<%= config.dist %>'
         }, {
           expand: true,
@@ -424,7 +424,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
